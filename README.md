@@ -76,3 +76,4 @@ Passwords: SHA-256 pre-hash then bcrypt (cost 10), never stored in plain text. L
 
 - `server/index.js` boot and routing, `auth.js` accounts, `routes.js` question/admin API, `questions.js` bank and no-repeat logic, `opentdb.js` internet questions, `multiplayer.js` Socket.IO matches, `db.js` / `memdb.js` database
 - `src/App.jsx` screens and flow, `Lobby.jsx`, `Live.jsx` (live match UI), `Profile.jsx`, `Admin.jsx`, `Auth.jsx`, `api.js`, `socket.js`, `rules.js` (rules shared with the server)
+# quiz-duel
