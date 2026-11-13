@@ -36,7 +36,7 @@ Head-to-head trivia with live multiplayer. React + Vite front end, Node/Express 
 | Final question | double points |
 | XP per match | win 60, draw 35, loss 20, plus 5 per correct answer |
 | Level formula | `floor(sqrt(xp / 60)) + 1` |
-| Topics | 52 (50 text topics + Flag Quiz + Who's That Pokemon with pictures) |
+| Topics | 68 (66 text topics + Flag Quiz + Who's That Pokemon with pictures) |
 
 ## Play modes
 
@@ -53,8 +53,8 @@ Live matches are server-authoritative: the server picks the questions, runs the 
 
 | Source | Details |
 |---|---|
-| Built-in | `src/questions*.js` (about 620 questions), copied into MongoDB at startup |
-| Open Trivia DB | Fetched from opentdb.com into MongoDB on boot and every 6 h when stale (about 90 s, 15 topics). Duplicates are skipped |
+| Built-in | `src/questions*.js` (about 780 questions), copied into MongoDB at startup |
+| Open Trivia DB | Fetched from opentdb.com into MongoDB on boot and every 6 h when stale (about 100 s, 19 topics). Duplicates are skipped |
 | Admin | Profile > Admin panel: add a question with an optional image URL, or fetch fresh questions now |
 | No repeats | The server remembers the last 300 questions each player saw per topic and avoids them, in solo and live matches. Only when a topic has fewer unseen questions than a match needs are the oldest-seen ones reused |
 | Pictures | A question can have an `image` URL (flags from flagcdn.com, Pokemon art from PokeAPI). Answer options are text |

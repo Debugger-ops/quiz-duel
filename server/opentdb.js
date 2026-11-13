@@ -7,6 +7,7 @@ export const CATEGORY = {
   general: 9, literature: 10, movies: 11, gaming: 15, science: 17, tech: 18, math: 19,
   greekmyth: 20, sports: 21, geography: 22, history: 23, art: 25, animals: 27,
   superheroes: 29, anime: 31,
+  television: 14, chess: 16, cars: 28, cartoons: 32,
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

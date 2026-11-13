@@ -1,5 +1,6 @@
 import { MORE_TOPICS, MORE_QUESTIONS } from './questions_more.js'
 import { IMAGE_TOPICS, IMAGE_QUESTIONS } from './questions_images.js'
+import { EXTRA_TOPICS, EXTRA_QUESTIONS } from './questions_extra.js'
 // Each question: q = prompt, a = correct answer, w = three wrong answers.
 // Answer order is shuffled at match time.
 
@@ -179,5 +180,5 @@ const BASE_QUESTIONS = {
   ],
 }
 
-export const TOPICS = [...BASE_TOPICS, ...MORE_TOPICS, ...IMAGE_TOPICS]
-export const QUESTIONS = { ...BASE_QUESTIONS, ...MORE_QUESTIONS, ...IMAGE_QUESTIONS }
+export const TOPICS = [...BASE_TOPICS, ...MORE_TOPICS, ...EXTRA_TOPICS, ...IMAGE_TOPICS]
+export const QUESTIONS = { ...BASE_QUESTIONS, ...MORE_QUESTIONS, ...EXTRA_QUESTIONS, ...IMAGE_QUESTIONS }
